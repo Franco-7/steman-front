@@ -1,10 +1,3 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
 <div class="content">
     <!-- Header -->
     <div class="row align-items-center header">
@@ -14,39 +7,38 @@
             </a>
         </div>
         <div class="col-md-auto">
-            <a class="fs-5" href="#">Inicio</a>
+            <a class="nav-link fs-5" href="#">Inicio</a>
         </div>
         <div class="col-md-auto">
-            <a class="fs-5" href="#">Demos</a>
+            <a class="nav-link fs-5" [routerLink]="['game-page']">Demos</a>
         </div>
         <div class="col">
-            <a class="fs-5" href="#">Tienda</a>
+            <a class="nav-link fs-5" [routerLink]="['catalogue']">Tienda</a>
         </div>
         <div class="col-md-auto">
-            <a class="fs-5" href="#">Carrito</a>
+            <a class="nav-link fs-5" href="#">Carrito</a>
         </div>
         <div class="col-md-auto">
-            <a class="fs-5" href="#">Perfil</a>
+            <a class="nav-link fs-5" href="#">Perfil</a>
         </div>
         <div class="col-md-auto">
-            <a class="fs-5"  href="#">Salir</a>
+            <a class="nav-link fs-5"  href="#">Salir</a>
         </div>
     </div>
 
     <!-- Content -->
-    <app-catalogue></app-catalogue>
-    <!-- <app-game-page></app-game-page> -->
+    <router-outlet></router-outlet>
 
     <!-- Footer -->
     <div class="row align-items-center footer">
         <div class="col-md-auto">
-            <a href="#">STEMAN VALUES</a>
+            <a class="nav-link" href="#">STEMAN VALUES</a>
         </div>
         <div class="col-md-auto">
-            <a href="#">BLOG</a>
+            <a class="nav-link" href="#">BLOG</a>
         </div>
         <div class="col">
-            <a href="#">CONTACT US</a>
+            <a class="nav-link" href="#">CONTACT US</a>
         </div>
         <div class="col-md-auto">
             <p>© 2021, made  by Steman Dev. Team</p>
